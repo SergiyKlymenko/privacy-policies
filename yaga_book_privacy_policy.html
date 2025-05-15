@@ -1,24 +1,126 @@
 ﻿<!DOCTYPE html>
 <html lang="uk">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Політика конфіденційності — YagaBook</title>
   <style>
     body {
-      max-width: 800px;
-      margin: auto;
-      font-family: Arial, sans-serif;
-      padding: 20px;
-      line-height: 1.6;
+      max-width: 720px;
+      margin: 40px auto;
+      background: linear-gradient(135deg, #1b0f0f, #3e2a07);
+      color: #fff7b3;
+      font-family: 'Arial', sans-serif;
+      padding: 30px 40px;
+      border: 12px solid #5c441f;
+      border-radius: 20px;
+      line-height: 1.7;
+      text-shadow: 0 0 8px #ffd85c;
+      box-shadow: inset 0 0 25px 8px #ffdb59cc;
+      position: relative;
+      user-select: none;
     }
-    h1, h2 {
-      color: #333;
+
+    h1 {
+      font-size: 3rem;
+      text-align: center;
+      margin-bottom: 0.6em;
+      color: #ffea5c;
+      text-shadow: 0 0 15px #ffea5c;
+    }
+
+    h2 {
+      font-size: 1.9rem;
+      margin-top: 2em;
+      margin-bottom: 0.5em;
+      border-bottom: 3px solid #ffdb59;
+      padding-bottom: 7px;
+      color: #fff28f;
+      text-shadow: 0 0 8px #ffdb59;
+    }
+
+    p, ul {
+      font-size: 1.17rem;
+      margin-bottom: 1.2em;
+      color: #fffad4;
+      text-shadow: 0 0 3px #b89832;
+    }
+
+    ul {
+      padding-left: 1.6em;
+      list-style: none;
+    }
+
+    ul li {
+      margin-bottom: 0.8em;
+      position: relative;
+      padding-left: 1.7em;
+    }
+
+    ul li::before {
+      content: "✨"; /* зірочка */
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: #ffea5c;
+      font-size: 1.3em;
+      text-shadow: 0 0 6px #ffea5c;
+      user-select: none;
+    }
+
+    strong {
+      color: #fff07b;
+      text-shadow: 0 0 6px #ffdb59;
+    }
+
+    a {
+      color: #ffe46b;
+      text-decoration: none;
+      border-bottom: 1px dotted #ffe46b;
+      transition: color 0.3s ease;
+    }
+    a:hover {
+      color: #fff5a1;
+      border-bottom: 1px solid #fff5a1;
+    }
+
+    /* Декоративна рамка - чарівна паличка з кутів */
+    body::before, body::after {
+      content: "🪄";
+      font-size: 3.2rem;
+      color: #ffdb59;
+      position: fixed;
+      text-shadow: 0 0 12px #ffea5c;
+      user-select: none;
+      opacity: 0.35;
+      z-index: 0;
+    }
+
+    body::before {
+      top: 15px;
+      left: 15px;
+      transform: rotate(-25deg);
+    }
+
+    body::after {
+      bottom: 15px;
+      right: 15px;
+      transform: rotate(25deg);
+    }
+
+    /* Стиль для електронної адреси без сяючого ефекту */
+    .email {
+      color: #fff7b3;
+      text-decoration: none;
+      font-family: 'Arial', sans-serif;
+      font-size: 1.17rem;
+      text-shadow: none;
     }
   </style>
 </head>
 <body>
   <h1>Політика конфіденційності</h1>
+
   <p><strong>Назва застосунку:</strong> YagaBook</p>
   <p><strong>Дата набуття чинності:</strong> 2025-05-15</p>
 
@@ -49,6 +151,6 @@
   <p>Застосунок призначений для широкої аудиторії, включно з дітьми. У ньому немає контенту, неприйнятного для дітей.</p>
 
   <h2>7. Зв’язок з нами</h2>
-  <p>Якщо у вас виникли запитання, напишіть нам на email: <strong>kyreinadia@gmail.com</strong></p>
+  <p>Якщо у вас виникли запитання, напишіть нам на email: <a href="mailto:kyreinadia@gmail.com" class="email">kyreinadia@gmail.com</a></p>
 </body>
 </html>
