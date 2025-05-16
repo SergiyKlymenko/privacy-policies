@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="uk">
 <head>
   <meta charset="UTF-8" />
@@ -22,12 +22,24 @@
     }
 
     h1 {
-      font-size: 3rem;
-      text-align: center;
-      margin-bottom: 0.6em;
-      color: #ffea5c;
-      text-shadow: 0 0 15px #ffea5c;
-    }
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 0.6em;
+  color: #ffea5c;
+  text-shadow: 0 0 15px #ffea5c;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  padding-right: 10px;
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+    padding-right: 8px;
+    padding-left: 8px;
+  }
+}
 
     h2 {
       font-size: 1.9rem;

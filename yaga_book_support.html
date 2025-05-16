@@ -1,41 +1,97 @@
 ﻿<!DOCTYPE html>
 <html lang="uk">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Підтримка</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 600px;
-            margin: 40px auto;
-            padding: 20px;
-            background: #f9f9f9;
-            color: #333;
-            text-align: center;
-        }
-        h1 {
-            color: #4a90e2;
-        }
-        a {
-            color: #4a90e2;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .content {
-            margin-top: 20px;
-            font-size: 18px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Підтримка — YagaBook</title>
+  <style>
+    body {
+      max-width: 720px;
+      margin: 40px auto;
+      background: linear-gradient(135deg, #1b0f0f, #3e2a07);
+      color: #fff7b3;
+      font-family: 'Arial', sans-serif;
+      padding: 30px 40px;
+      border: 12px solid #5c441f;
+      border-radius: 20px;
+      line-height: 1.7;
+      text-shadow: 0 0 8px #ffd85c;
+      box-shadow: inset 0 0 25px 8px #ffdb59cc;
+      position: relative;
+      user-select: none;
+      text-align: center;
+    }
+
+   h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 0.6em;
+  color: #ffea5c;
+  text-shadow: 0 0 15px #ffea5c;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  padding-right: 10px;
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+    padding-right: 8px;
+    padding-left: 8px;
+  }
+}
+
+    p {
+      font-size: 1.3rem;
+      margin-bottom: 1.2em;
+      color: #fffad4;
+      text-shadow: 0 0 3px #b89832;
+    }
+
+    a.email {
+      color: #ffe46b;
+      text-decoration: none;
+      border-bottom: 1px dotted #ffe46b;
+      font-family: 'Arial', sans-serif;
+      font-size: 1.3rem;
+      text-shadow: none;
+      transition: color 0.3s ease;
+      user-select: text;
+    }
+    a.email:hover {
+      color: #fff5a1;
+      border-bottom: 1px solid #fff5a1;
+    }
+
+    /* Декоративна рамка - чарівна паличка з кутів */
+    body::before, body::after {
+      content: "🪄";
+      font-size: 3.2rem;
+      color: #ffdb59;
+      position: fixed;
+      text-shadow: 0 0 12px #ffea5c;
+      user-select: none;
+      opacity: 0.35;
+      z-index: 0;
+    }
+
+    body::before {
+      top: 15px;
+      left: 15px;
+      transform: rotate(-25deg);
+    }
+
+    body::after {
+      bottom: 15px;
+      right: 15px;
+      transform: rotate(25deg);
+    }
+  </style>
 </head>
 <body>
-    <h1>Підтримка користувачів</h1>
-    <div class="content">
-        Якщо у вас виникли питання або проблеми, будь ласка, звертайтесь за електронною поштою:<br />
-        <a href="mailto:kyreinadia@gmail.com">kyreinadia@gmail.com</a>
-    </div>
+  <h1>Підтримка користувачів</h1>
+  <p>Якщо у вас виникли питання або потрібна допомога, будь ласка, напишіть нам на електронну пошту:</p>
+  <p><a href="mailto:kyreinadia@gmail.com" class="email">kyreinadia@gmail.com</a></p>
 </body>
 </html>
